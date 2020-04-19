@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+// 影响到body的高度了
+.el-scrollbar__wrap{
+  overflow-x: hidden;
+}
+.el-select-dropdown.el-popper .el-scrollbar__wrap{
+  overflow-x:scroll;
+  overflow-y:scroll;
+}
+// 阿里字体
+.iconfont {
+  font-size: 16px;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+// 防止dialog自动生成
+body {
+  padding: 0!important;
+}
+// 面包屑导航高亮当前路由
+.no-redirect {
+  color: #34A8FE !important;
+}
+
+// 路由高亮
+.router-link-active {
+  background-color: #1886E0;
+}
+
+a {
+  text-decoration: none;
+  out-line: none;
+  color: #fff;
+}
+[v-cloak] { display: none }
+/**
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * https://cssreset.com/
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/*
+	TODO will need to remove settings on HTML since we can't namespace it.
+	TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html {
+  color: #303133;
+  background: #FFF;
+  font-size: 14px;
+}
+
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF.
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+$theme-color: #3385ff;
+
+/*
+  移动端屏幕适配：
+         设置rem的基准值（可随便设置）；
+         font-size = 屏幕宽度*rem的基准值/ui设计稿
+         例如：
+               屏幕宽度为750；rem的基准值20；ui设计稿宽度750；
+               则font-size = 750 * 20 / 750 = 20；1rem = 20
+*/
+
+// ui设计稿
+$ui-width:750;
+// 设置rem的基准值
+$e:20;
+//设置根标签html font-size值
+$fs:calc(100vw * 20 / 750);
+html {
+  font-size: $fs;
+}
