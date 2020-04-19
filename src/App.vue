@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-     <div class="div1">啦啦啦</div>
-     <div class="div2">咔咔咔</div>
+     <div class="div1">啦啦啦来来来</div>
+     <div class="div2">咔咔咔来来来</div>
   </div>
 </template>
 
