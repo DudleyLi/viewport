@@ -23,13 +23,13 @@ export default {
   color: #2c3e50;
   display: flex;
   .div1 {
-    width:  200rem/$e;
+    width:  300rem/$e;
     height: 100rem/$e;
     background-color: $theme-color;
     font-size: 32rem/$e;
   }
   .div2{
-    width:  400rem/$e;
+    width:  500rem/$e;
     height: 100rem/$e;
     background-color:red;
     font-size: 32rem/$e;
